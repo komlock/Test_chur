@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700,900" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title>The Boys Liquid</title>
+  </head>
+  <body id="shares">
+    <header>
+      <nav><a class="back" href="landing.html"></a><a class="logo" href="#">The Boys Liquid</a>
+        <div class="page">- Shares</div>
+      </nav>
+    </header>
+    <table class="shares-table">
+      <thead>
+        <tr> 
+          <th class="text">Members</th>
+          <th id="head"> 
+            <select id="shares-select" onchange="updateTable()">
+              <option value="0">Ownership</option>
+              <option value="1">Invested</option>
+              <option value="2">Earnings</option>
+              <option value="3">Profit</option>
+            </select>
+          </th>
+          <th class="full">Ownership</th>
+          <th class="full">Invested</th>
+          <th class="full">Earnings</th>
+          <th class="full">Profit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text">Davide</td>
+          <td class="own">20% </td>
+          <td class="inv">$120.00</td>
+          <td class="ear">$30.00</td>
+          <td class="pro">($90.00)</td>
+        </tr>
+        <tr>
+          <td class="text">Ethan</td>
+          <td class="own">20% </td>
+          <td class="inv">$120.00</td>
+          <td class="ear">$30.00</td>
+          <td class="pro">($90.00)</td>
+        </tr>
+        <tr>
+          <td class="text">Felix</td>
+          <td class="own">20% </td>
+          <td class="inv">$120.00</td>
+          <td class="ear">$30.00</td>
+          <td class="pro">($90.00)</td>
+        </tr>
+        <tr>
+          <td class="text">Sam</td>
+          <td class="own">20% </td>
+          <td class="inv">$120.00</td>
+          <td class="ear">$30.00</td>
+          <td class="pro">($90.00)</td>
+        </tr>
+        <tr>
+          <td class="text">Peter</td>
+          <td class="own">20% </td>
+          <td class="inv">$120.00</td>
+          <td class="ear">$30.00</td>
+          <td class="pro">($90.00)</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="summery">
+      <div class="summary-bubble summary-bubble-inv">
+        <p class="tag">Total Investment</p>
+        <p class="amount">$600.00</p>
+      </div>
+      <div class="summary-bubble summary-bubble-ear">
+        <p class="tag">Total Earnings</p>
+        <p class="amount">$150.00</p>
+      </div>
+      <div class="summary-bubble summary-bubble-pro">
+        <p class="tag">Total Loss</p>
+        <p class="amount">$450.00</p>
+      </div>
+    </div>
+    <script src="js/shares-table.js"></script>
+  </body>
+</html>
